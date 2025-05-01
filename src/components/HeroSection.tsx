@@ -1,4 +1,3 @@
-
 import { ChevronDown } from 'lucide-react';
 import { getWhatsAppLink } from '../utils/whatsapp';
 
@@ -9,7 +8,7 @@ const HeroSection = () => {
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{ 
-          backgroundImage: <img src="https://i.ibb.co/9Hfsg93N/Whats-App-Image-2025-04-30-at-17-52-42-3.jpg" alt="Whats-App-Image-2025-04-30-at-17-52-42-3" border="0">,
+          backgroundImage: "url('https://i.ibb.co/9Hfsg93N/Whats-App-Image-2025-04-30-at-17-52-42-3.jpg')",
         }}
       >
         <div className="absolute inset-0 bg-gradient-to-r from-charcoal/70 to-charcoal/40" />
