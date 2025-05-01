@@ -12,7 +12,7 @@ const AboutSection = () => {
             </h2>
             <div className="gold-divider" />
             <p className="text-body mb-6">
-              Com apenas dois apartamentos por andar, cada unidade possui 139m², distribuídos em 
+              Com apenas 2 apartamentos por andar, cada unidade possui 139m², distribuídos em 
               3 suítes e uma ampla área social integrada à cozinha, garantindo sofisticação, 
               conforto e funcionalidade para um estilo de vida contemporâneo.
             </p>
