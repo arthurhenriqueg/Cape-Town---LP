@@ -1,5 +1,6 @@
 
 import { ChevronDown } from 'lucide-react';
+import { getWhatsAppLink } from '../utils/whatsapp';
 
 const HeroSection = () => {
   return (
@@ -8,7 +9,7 @@ const HeroSection = () => {
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{ 
-          backgroundImage: "url('https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=2053&auto=format&fit=crop')",
+          backgroundImage: "url('/lovable-uploads/2591cd09-0922-40c4-983a-8686291ca948.png')",
         }}
       >
         <div className="absolute inset-0 bg-gradient-to-r from-charcoal/70 to-charcoal/40" />
@@ -24,10 +25,10 @@ const HeroSection = () => {
           O primeiro edifício em Balneário Camboriú projetado pelo renomado arquiteto Jayme Bernardo
         </p>
         <div className="flex flex-col sm:flex-row gap-4 animate-slide-down opacity-0" style={{ animationDelay: '0.9s' }}>
-          <a href="#about" className="button-primary">
+          <a href={getWhatsAppLink()} className="button-primary">
             Saiba mais sobre as unidades disponíveis
           </a>
-          <a href="#contact" className="button-secondary">
+          <a href={getWhatsAppLink()} className="button-secondary">
             Agende uma visita
           </a>
         </div>

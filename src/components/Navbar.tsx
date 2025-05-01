@@ -1,6 +1,7 @@
 
 import { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
+import { getWhatsAppLink } from '../utils/whatsapp';
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -58,7 +59,7 @@ const Navbar = () => {
             </a>
           ))}
           <a 
-            href="#contact" 
+            href={getWhatsAppLink()} 
             className="button-primary"
           >
             Agende uma visita
@@ -89,7 +90,7 @@ const Navbar = () => {
               </a>
             ))}
             <a 
-              href="#contact" 
+              href={getWhatsAppLink()} 
               className="button-primary text-center mt-4"
               onClick={() => setIsMenuOpen(false)}
             >

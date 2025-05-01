@@ -12,6 +12,7 @@ import ContactSection from "../components/ContactSection";
 import Footer from "../components/Footer";
 import WhatsAppButton from "../components/WhatsAppButton";
 import { toast } from "sonner";
+import { getWhatsAppLink } from '../utils/whatsapp';
 
 const Index = () => {
   useEffect(() => {
@@ -22,7 +23,7 @@ const Index = () => {
           description: "Temos unidades disponíveis para você. Deseja falar com um consultor?",
           action: {
             label: "Falar agora",
-            onClick: () => window.open("https://wa.me/5547999999999", "_blank"),
+            onClick: () => window.open(getWhatsAppLink(), "_blank"),
           },
         }
       );

@@ -1,4 +1,6 @@
 
+import { getWhatsAppLink } from "../utils/whatsapp";
+
 const OpportunitySection = () => {
   return (
     <section 
@@ -52,7 +54,7 @@ const OpportunitySection = () => {
           
           <div className="flex justify-center">
             <a 
-              href="#contact" 
+              href={getWhatsAppLink()} 
               className="button-primary px-10 py-4 text-lg"
             >
               Garanta sua unidade exclusiva

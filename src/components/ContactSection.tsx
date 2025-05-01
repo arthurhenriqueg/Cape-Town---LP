@@ -1,6 +1,7 @@
 
 import { useState } from 'react';
 import { toast } from "sonner";
+import { getWhatsAppLink } from '../utils/whatsapp';
 
 const ContactSection = () => {
   const [formData, setFormData] = useState({
@@ -33,6 +34,9 @@ const ContactSection = () => {
       message: '',
       newsletter: false,
     });
+    
+    // Redirecionar para WhatsApp com a mensagem
+    window.open(getWhatsAppLink(), '_blank');
   };
 
   return (
@@ -69,7 +73,7 @@ const ContactSection = () => {
                 <div>
                   <h4 className="font-serif font-medium text-lg mb-1">Telefone</h4>
                   <p className="text-charcoal/70">+55 (47) 3366-9999</p>
-                  <p className="text-charcoal/70">+55 (47) 99999-9999 (WhatsApp)</p>
+                  <p className="text-charcoal/70">+55 (47) 98897-9988 (WhatsApp)</p>
                 </div>
               </div>
               
