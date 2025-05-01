@@ -1,4 +1,3 @@
-
 const LocationSection = () => {
   const proximityPoints = [
     { name: "Distrito de Design", distance: "300m", icon: "🏙️" },
@@ -6,7 +5,6 @@ const LocationSection = () => {
     { name: "Praia Central", distance: "800m", icon: "🏖️" },
     { name: "Comércio de luxo", distance: "400m", icon: "🛍️" },
   ];
-
   return (
     <section id="location" className="py-20 bg-white">
       <div className="container-custom">
@@ -23,9 +21,9 @@ const LocationSection = () => {
         <div className="grid grid-cols-1 lg:grid-cols-5 gap-8 items-center">
           <div className="lg:col-span-3">
             <div className="relative rounded-sm overflow-hidden subtle-shadow">
-              {/* This would ideally be a real map */}
+              {/* Updated image */}
               <img 
-                src="https://images.unsplash.com/photo-1486344631012-32a321a88eba?q=80&w=2070&auto=format&fit=crop" 
+                src="https://i.ibb.co/rGTLq4sc/Whats-App-Image-2025-04-30-at-17-52-43-1.jpg" 
                 alt="Cape Town Location" 
                 className="w-full h-96 object-cover"
               />
@@ -72,5 +70,4 @@ const LocationSection = () => {
     </section>
   );
 };
-
 export default LocationSection;
