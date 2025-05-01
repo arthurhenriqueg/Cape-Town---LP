@@ -24,7 +24,7 @@ const AboutSection = () => {
             <div className="flex items-center">
               <p className="italic text-gold mr-4">Jayme Bernardo</p>
               <img 
-                src="https://images.unsplash.com/photo-1571171637578-41bc2dd41cd2?q=80&w=200&auto=format&fit=crop" 
+                src="https://www.homedesign.com.br/media/4844/jayme-bernardo.jpg" 
                 alt="Assinatura Jayme Bernardo" 
                 className="h-16 w-auto"
               />
