@@ -64,7 +64,7 @@ const OpportunitySection = () => {
           <div className="mt-16 flex items-center justify-center space-x-8">
             <div className="bg-white p-4 rounded-sm subtle-shadow w-40 h-20 flex items-center justify-center">
               <img 
-                src="https://i.ibb.co/hJ0k1YR/290022244-552984213221934-7854402405974812143-n-removebg-preview.png" 
+                src="https://i.ibb.co/PvwkvNxm/290022244-552984213221934-7854402405974812143-n.jpg" 
                 alt="R21 Logo" 
                 className="max-h-full max-w-full object-contain"
               />
@@ -72,7 +72,7 @@ const OpportunitySection = () => {
             <span className="text-gold text-2xl">&</span>
             <div className="bg-white p-4 rounded-sm subtle-shadow w-40 h-20 flex items-center justify-center">
               <img 
-                src="https://i.ibb.co/YFrxKTy/babb9f11cf69dd1b8799259b.webp" 
+                src="https://i.ibb.co/SDjR1fRj/babb9f11cf69dd1b8799259b-removebg-preview.png" 
                 alt="A10 Logo" 
                 className="max-h-full max-w-full object-contain"
               />
