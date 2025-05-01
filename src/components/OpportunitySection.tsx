@@ -6,7 +6,7 @@ const OpportunitySection = () => {
     <section 
       className="py-20 bg-cover bg-center relative"
       style={{ 
-        backgroundImage: "url('https://i.ibb.co/ymtz525/Whats-App-Image-2025-04-30-at-17-52-43-2.jpg')",
+        backgroundImage: "url('https://postimg.cc/2bSYGqzD')",
       }}
     >
       <div className="absolute inset-0 bg-charcoal/80" />
