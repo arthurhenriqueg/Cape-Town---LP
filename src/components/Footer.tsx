@@ -73,14 +73,14 @@ const Footer = () => {
             <div className="flex flex-col space-y-4">
               <div className="bg-white/10 p-4 rounded-sm w-40 h-20 flex items-center justify-center">
                 <img 
-                  src="https://i.ibb.co/hJ0k1YRj/290022244-552984213221934-7854402405974812143-n-removebg-preview.png" 
+                  src="https://i.ibb.co/PvwkvNxm/290022244-552984213221934-7854402405974812143-n.jpg" 
                   alt="R21 Logo" 
                   className="max-h-full max-w-full object-contain"
                 />
               </div>
               <div className="bg-white/10 p-4 rounded-sm w-40 h-20 flex items-center justify-center">
                 <img 
-                  src="https://i.ibb.co/YFrxKTyR/babb9f11cf69dd1b8799259b.webp" 
+                  src="https://i.ibb.co/7x0zgSqB/image-removebg-preview-4.png" 
                   alt="A10 Logo" 
                   className="max-h-full max-w-full object-contain"
                 />
