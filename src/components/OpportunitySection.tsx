@@ -63,6 +63,7 @@ const OpportunitySection = () => {
           
           <div className="mt-16 flex items-center justify-center space-x-8">
             <div className="bg-white p-4 rounded-sm subtle-shadow">
+              {/* Espaço reservado para logo R21 - Use uma imagem real quando disponível */}
               <img 
                 src="https://placehold.co/200x80?text=R21" 
                 alt="R21 Logo" 
@@ -71,6 +72,7 @@ const OpportunitySection = () => {
             </div>
             <span className="text-gold text-2xl">&</span>
             <div className="bg-white p-4 rounded-sm subtle-shadow">
+              {/* Espaço reservado para logo A10 - Use uma imagem real quando disponível */}
               <img 
                 src="https://placehold.co/200x80?text=A10" 
                 alt="A10 Logo" 

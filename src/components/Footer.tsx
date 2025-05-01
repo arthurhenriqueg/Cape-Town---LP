@@ -16,7 +16,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
           <div>
             <a href="#home" className="inline-block mb-6">
-              <span className="font-serif font-bold text-2xl tracking-tighter">
+              <span className="font-serif font-bold text-2xl tracking-tighter text-white">
                 CAPE <span className="text-gold">TOWN</span>
               </span>
             </a>
@@ -68,6 +68,7 @@ const Footer = () => {
             <h3 className="font-serif font-bold text-lg mb-6">Incorporação</h3>
             <div className="flex flex-col space-y-4">
               <div className="bg-white/10 p-4 rounded-sm">
+                {/* Espaço reservado para logo R21 - Use uma imagem real quando disponível */}
                 <img 
                   src="https://placehold.co/200x80?text=R21" 
                   alt="R21 Logo" 
@@ -75,6 +76,7 @@ const Footer = () => {
                 />
               </div>
               <div className="bg-white/10 p-4 rounded-sm">
+                {/* Espaço reservado para logo A10 - Use uma imagem real quando disponível */}
                 <img 
                   src="https://placehold.co/200x80?text=A10" 
                   alt="A10 Logo" 

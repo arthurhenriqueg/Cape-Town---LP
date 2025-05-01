@@ -42,8 +42,10 @@ const Navbar = () => {
     >
       <div className="container-custom flex items-center justify-between">
         <a href="#home" className="flex items-center">
-          <span className="font-serif font-bold text-2xl md:text-3xl tracking-tighter text-charcoal">
-            CAPE <span className="text-gold">TOWN</span>
+          <span className={`font-serif font-bold text-2xl md:text-3xl tracking-tighter ${
+            isScrolled ? 'text-charcoal' : 'text-white'
+          }`}>
+            CAPE <span className={isScrolled ? 'text-gold' : 'text-white'}>TOWN</span>
           </span>
         </a>
         
@@ -53,7 +55,9 @@ const Navbar = () => {
             <a 
               key={link.name} 
               href={link.href}
-              className="font-medium text-sm text-charcoal hover:text-gold transition-colors"
+              className={`font-medium text-sm ${
+                isScrolled ? 'text-charcoal hover:text-gold' : 'text-white hover:text-gold'
+              } transition-colors`}
             >
               {link.name}
             </a>
@@ -68,7 +72,7 @@ const Navbar = () => {
         
         {/* Mobile Menu Button */}
         <button 
-          className="md:hidden text-charcoal focus:outline-none"
+          className={`md:hidden ${isScrolled ? 'text-charcoal' : 'text-white'} focus:outline-none`}
           onClick={toggleMenu}
         >
           {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
