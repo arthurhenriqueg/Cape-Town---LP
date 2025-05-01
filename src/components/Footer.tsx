@@ -17,7 +17,7 @@ const Footer = () => {
           <div>
             <a href="#home" className="inline-block mb-6">
               <span className="font-serif font-bold text-2xl tracking-tighter text-white">
-                CAPE <span className="text-gold">TOWN</span>
+                CAPE <span className="text-white">TOWN</span>
               </span>
             </a>
             <p className="text-sm text-white/70 mb-6">
@@ -73,14 +73,14 @@ const Footer = () => {
             <div className="flex flex-col space-y-4">
               <div className="bg-white/10 p-4 rounded-sm w-40 h-20 flex items-center justify-center">
                 <img 
-                  src="https://i.ibb.co/hJ0k1YRj/290022244-552984213221934-7854402405974812143-n-removebg-preview.png" 
+                  src="https://i.ibb.co/hJ0k1YR/290022244-552984213221934-7854402405974812143-n-removebg-preview.png" 
                   alt="R21 Logo" 
                   className="max-h-full max-w-full object-contain"
                 />
               </div>
               <div className="bg-white/10 p-4 rounded-sm w-40 h-20 flex items-center justify-center">
                 <img 
-                  src="https://i.ibb.co/YFrxKTyR/babb9f11cf69dd1b8799259b.webp" 
+                  src="https://i.ibb.co/YFrxKTy/babb9f11cf69dd1b8799259b.webp" 
                   alt="A10 Logo" 
                   className="max-h-full max-w-full object-contain"
                 />
