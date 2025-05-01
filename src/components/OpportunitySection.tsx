@@ -31,7 +31,7 @@ const OpportunitySection = () => {
             
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div className="bg-white/10 p-6 rounded-sm">
-                <h4 className="font-serif text-xl text-gold mb-2">Unidade 2201</h4>
+                <h4 className="font-serif text-xl text-gold mb-2">Unidade 1801</h4>
                 <ul className="space-y-2 text-white/80">
                   <li>• 139m² de área privativa</li>
                   <li>• 3 suítes</li>
@@ -41,7 +41,7 @@ const OpportunitySection = () => {
               </div>
               
               <div className="bg-white/10 p-6 rounded-sm">
-                <h4 className="font-serif text-xl text-gold mb-2">Unidade 2501</h4>
+                <h4 className="font-serif text-xl text-gold mb-2">Unidade 1901</h4>
                 <ul className="space-y-2 text-white/80">
                   <li>• 139m² de área privativa</li>
                   <li>• 3 suítes</li>
