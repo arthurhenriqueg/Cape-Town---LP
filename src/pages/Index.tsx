@@ -9,6 +9,7 @@ import LeisureSection from "../components/LeisureSection";
 import LocationSection from "../components/LocationSection";
 import OpportunitySection from "../components/OpportunitySection";
 import ContactSection from "../components/ContactSection";
+import GallerySection from "../components/GallerySection";
 import Footer from "../components/Footer";
 import WhatsAppButton from "../components/WhatsAppButton";
 import { toast } from "sonner";
@@ -43,6 +44,7 @@ const Index = () => {
       <LocationSection />
       <OpportunitySection />
       <ContactSection />
+      <GallerySection />
       <Footer />
       <WhatsAppButton />
     </div>
