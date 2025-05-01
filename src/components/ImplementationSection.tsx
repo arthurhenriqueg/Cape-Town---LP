@@ -1,4 +1,3 @@
-
 import React from 'react';
 
 const ImplementationSection = () => {
@@ -9,7 +8,7 @@ const ImplementationSection = () => {
           <div>
             <div className="relative">
               <img 
-                <img src="https://i.ibb.co/JWcZKbKj/Whats-App-Image-2025-04-30-at-17-52-43.jpg" alt="Whats-App-Image-2025-04-30-at-17-52-43" border="0">" 
+                src="https://i.ibb.co/JWcZKbKj/Whats-App-Image-2025-04-30-at-17-52-43.jpg"
                 alt="Implantação Cape Town" 
                 className="w-full h-auto object-cover rounded-sm subtle-shadow"
               />
