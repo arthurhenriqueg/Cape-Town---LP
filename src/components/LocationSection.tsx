@@ -23,7 +23,7 @@ const LocationSection = () => {
             <div className="relative rounded-sm overflow-hidden subtle-shadow">
               {/* Updated image */}
               <img 
-                src="https://i.ibb.co/rGTLq4sc/Whats-App-Image-2025-04-30-at-17-52-43-1.jpg" 
+                src="https://i.ibb.co/S4HQ6cc3/Yi-Z1-ONx-O-balneario-camboriu-640x449.webp" 
                 alt="Cape Town Location" 
                 className="w-full h-96 object-cover"
               />
