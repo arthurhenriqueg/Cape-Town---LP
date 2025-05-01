@@ -9,7 +9,7 @@ const ImplementationSection = () => {
           <div>
             <div className="relative">
               <img 
-                src="https://images.unsplash.com/photo-1543331962-95241ba629a6?q=80&w=2070&auto=format&fit=crop" 
+                <img src="https://i.ibb.co/JWcZKbKj/Whats-App-Image-2025-04-30-at-17-52-43.jpg" alt="Whats-App-Image-2025-04-30-at-17-52-43" border="0">" 
                 alt="Implantação Cape Town" 
                 className="w-full h-auto object-cover rounded-sm subtle-shadow"
               />
