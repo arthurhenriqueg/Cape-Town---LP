@@ -6,7 +6,7 @@ const OpportunitySection = () => {
     <section 
       className="py-20 bg-cover bg-center relative"
       style={{ 
-        backgroundImage: "url('https://images.unsplash.com/photo-1555636222-cae831e670b3?q=80&w=2070&auto=format&fit=crop')",
+        backgroundImage: "url('https://i.ibb.co/ymtz5254/Whats-App-Image-2025-04-30-at-17-52-43-2.jpg')",
       }}
     >
       <div className="absolute inset-0 bg-charcoal/80" />
@@ -65,7 +65,7 @@ const OpportunitySection = () => {
             <div className="bg-white p-4 rounded-sm subtle-shadow">
               {/* Espaço reservado para logo R21 - Use uma imagem real quando disponível */}
               <img 
-                src="https://placehold.co/200x80?text=R21" 
+                src="https://i.ibb.co/hJ0k1YRj/290022244-552984213221934-7854402405974812143-n-removebg-preview.png" 
                 alt="R21 Logo" 
                 className="h-12"
               />
@@ -74,7 +74,7 @@ const OpportunitySection = () => {
             <div className="bg-white p-4 rounded-sm subtle-shadow">
               {/* Espaço reservado para logo A10 - Use uma imagem real quando disponível */}
               <img 
-                src="https://placehold.co/200x80?text=A10" 
+                src="https://i.ibb.co/YFrxKTyR/babb9f11cf69dd1b8799259b.webp" 
                 alt="A10 Logo" 
                 className="h-12"
               />
