@@ -35,7 +35,7 @@ const AboutSection = () => {
             <div className="relative">
               <div className="bg-gold/20 w-full h-full absolute -top-6 -left-6 z-0 rounded-sm" />
               <img 
-                src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?q=80&w=2070&auto=format&fit=crop" 
+                src="https://ibb.co/9RBMmWcauto=format&fit=crop" 
                 alt="Cape Town Building" 
                 className="w-full h-auto object-cover z-10 relative rounded-sm shadow-lg"
               />
