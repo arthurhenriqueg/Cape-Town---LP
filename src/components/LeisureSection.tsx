@@ -1,4 +1,3 @@
-
 import { useState } from 'react';
 
 const LeisureSection = () => {
@@ -8,42 +7,42 @@ const LeisureSection = () => {
     { 
       id: 'pool', 
       name: 'Piscina térmica', 
-      image: 'https://images.unsplash.com/photo-1560749003-f4b1e17e2dff?q=80&w=2067&auto=format&fit=crop' 
+      image: 'https://i.ibb.co/VcWvVrF7/Whats-App-Image-2025-04-30-at-17-52-44-2.jpg' 
     },
     { 
       id: 'spa', 
       name: 'Sauna e spa', 
-      image: 'https://images.unsplash.com/photo-1579026080117-35ce5a57d5a1?q=80&w=2069&auto=format&fit=crop' 
+      image: 'https://i.ibb.co/SwxS0DFR/Whats-App-Image-2025-04-30-at-17-52-37.jpg' 
     },
     { 
       id: 'garden', 
       name: 'Jardins', 
-      image: 'https://images.unsplash.com/photo-1558383817-aea1c097483e?q=80&w=2072&auto=format&fit=crop' 
+      image: 'https://i.ibb.co/mQcxMPm/Whats-App-Image-2025-04-30-at-17-52-44-1.jpg' 
     },
     { 
       id: 'party', 
       name: 'Salões de festas', 
-      image: 'https://images.unsplash.com/photo-1627916607164-7b20241db958?q=80&w=2070&auto=format&fit=crop' 
+      image: 'https://i.ibb.co/8g5TmB6D/Whats-App-Image-2025-04-30-at-17-52-42-4.jpg' 
     },
     { 
       id: 'gourmet', 
       name: 'Espaço gourmet', 
-      image: 'https://images.unsplash.com/photo-1651513785406-e3a03aaef392?q=80&w=2070&auto=format&fit=crop' 
+      image: 'https://i.ibb.co/Y4p1KKvz/Whats-App-Image-2025-04-30-at-17-52-39-4.jpg' 
     },
     { 
       id: 'kids', 
       name: 'Área kids', 
-      image: 'https://images.unsplash.com/photo-1596997000103-e597b3ca50df?q=80&w=2070&auto=format&fit=crop' 
+      image: 'https://i.ibb.co/0pHwhjzY/Whats-App-Image-2025-04-30-at-17-52-40-2.jpg' 
     },
     { 
       id: 'gym', 
       name: 'Academia moderna', 
-      image: 'https://images.unsplash.com/photo-1571902943202-507ec2618e8f?q=80&w=2075&auto=format&fit=crop' 
+      image: 'https://i.ibb.co/FL8cTKrK/Whats-App-Image-2025-04-30-at-17-52-40-3.jpg' 
     },
     { 
       id: 'office', 
       name: 'Escritório para coworking', 
-      image: 'https://images.unsplash.com/photo-1497366811353-6870744d04b2?q=80&w=2069&auto=format&fit=crop'
+      image: 'https://i.ibb.co/h1LvtPH0/Whats-App-Image-2025-04-30-at-17-52-41-1.jpg'
     },
   ];
 
@@ -110,7 +109,7 @@ const LeisureSection = () => {
           <div className="bg-white rounded-sm overflow-hidden subtle-shadow">
             <div className="relative h-96">
               <img 
-                src="https://images.unsplash.com/photo-1626801722927-9e1c357bd9a0?q=80&w=2070&auto=format&fit=crop" 
+                src="https://i.ibb.co/jvr0hdyp/Whats-App-Image-2025-04-30-at-17-52-38.jpg" 
                 alt="Rooftop Exclusive" 
                 className="w-full h-full object-cover"
               />
