@@ -1,3 +1,4 @@
+
 import { useState } from 'react';
 
 const LeisureSection = () => {
@@ -59,27 +60,30 @@ const LeisureSection = () => {
         </div>
         
         {/* Tabs */}
-        <div className="flex flex-wrap justify-center gap-4 mb-12">
-          <button 
-            className={`px-6 py-3 font-medium text-sm transition-all ${
-              activeTab === 'general' 
-                ? 'bg-gold text-white' 
-                : 'bg-white text-charcoal hover:bg-gold-light/30'
-            }`}
-            onClick={() => setActiveTab('general')}
-          >
-            Áreas de Lazer
-          </button>
-          <button 
-            className={`px-6 py-3 font-medium text-sm transition-all ${
-              activeTab === 'rooftop' 
-                ? 'bg-gold text-white' 
-                : 'bg-white text-charcoal hover:bg-gold-light/30'
-            }`}
-            onClick={() => setActiveTab('rooftop')}
-          >
-            Rooftop Exclusivo
-          </button>
+        <div className="flex flex-col items-center mb-12">
+          <div className="flex flex-wrap justify-center gap-4 mb-2">
+            <button 
+              className={`px-6 py-3 font-medium text-sm transition-all ${
+                activeTab === 'general' 
+                  ? 'bg-gold text-white' 
+                  : 'bg-white text-charcoal hover:bg-gold-light/30'
+              }`}
+              onClick={() => setActiveTab('general')}
+            >
+              Áreas de Lazer
+            </button>
+            <button 
+              className={`px-6 py-3 font-medium text-sm transition-all ${
+                activeTab === 'rooftop' 
+                  ? 'bg-gold text-white' 
+                  : 'bg-white text-charcoal hover:bg-gold-light/30'
+              }`}
+              onClick={() => setActiveTab('rooftop')}
+            >
+              Rooftop Exclusivo
+            </button>
+          </div>
+          <span className="text-xs text-charcoal/60 mt-1">selecione</span>
         </div>
         
         {/* General Leisure Areas */}

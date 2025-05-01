@@ -57,30 +57,32 @@ const Footer = () => {
           <div>
             <h3 className="font-serif font-bold text-lg mb-6">Contato</h3>
             <ul className="space-y-3 text-white/70">
-              <li>+55 (47) 3366-9999</li>
+              <li>(47) 3514-8544</li>
               <li>+55 (47) 98897-9988 (WhatsApp)</li>
               <li>contato@capetown.com.br</li>
               <li>Avenida Atlântica, 5500 - Barra Norte, Balneário Camboriú - SC</li>
+              <li className="pt-2 border-t border-white/10">
+                <span className="font-medium">A10 Endereço:</span><br />
+                R. 3110, N° 377 - sala 2 - Centro, Balneário Camboriú - SC, 88330-287
+              </li>
             </ul>
           </div>
           
           <div>
             <h3 className="font-serif font-bold text-lg mb-6">Incorporação</h3>
             <div className="flex flex-col space-y-4">
-              <div className="bg-white/10 p-4 rounded-sm">
-                {/* Espaço reservado para logo R21 - Use uma imagem real quando disponível */}
+              <div className="bg-white/10 p-4 rounded-sm w-40 h-20 flex items-center justify-center">
                 <img 
-                  src="https://placehold.co/200x80?text=R21" 
+                  src="https://i.ibb.co/hJ0k1YRj/290022244-552984213221934-7854402405974812143-n-removebg-preview.png" 
                   alt="R21 Logo" 
-                  className="h-8"
+                  className="max-h-full max-w-full object-contain"
                 />
               </div>
-              <div className="bg-white/10 p-4 rounded-sm">
-                {/* Espaço reservado para logo A10 - Use uma imagem real quando disponível */}
+              <div className="bg-white/10 p-4 rounded-sm w-40 h-20 flex items-center justify-center">
                 <img 
-                  src="https://placehold.co/200x80?text=A10" 
+                  src="https://i.ibb.co/YFrxKTyR/babb9f11cf69dd1b8799259b.webp" 
                   alt="A10 Logo" 
-                  className="h-8"
+                  className="max-h-full max-w-full object-contain"
                 />
               </div>
             </div>

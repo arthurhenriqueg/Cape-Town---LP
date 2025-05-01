@@ -72,7 +72,7 @@ const ContactSection = () => {
                 </div>
                 <div>
                   <h4 className="font-serif font-medium text-lg mb-1">Telefone</h4>
-                  <p className="text-charcoal/70">+55 (47) 3366-9999</p>
+                  <p className="text-charcoal/70">(47) 3514-8544</p>
                   <p className="text-charcoal/70">+55 (47) 98897-9988 (WhatsApp)</p>
                 </div>
               </div>
@@ -160,18 +160,23 @@ const ContactSection = () => {
                     ></textarea>
                   </div>
                   
-                  <div className="flex items-center">
-                    <input
-                      id="newsletter"
-                      name="newsletter"
-                      type="checkbox"
-                      checked={formData.newsletter}
-                      onChange={handleCheckboxChange}
-                      className="h-4 w-4 text-gold focus:ring-gold border-beige-dark"
-                    />
-                    <label htmlFor="newsletter" className="ml-2 block text-sm text-charcoal/80">
-                      Desejo receber novidades sobre o Cape Town
-                    </label>
+                  <div className="flex flex-col">
+                    <div className="flex items-center">
+                      <input
+                        id="newsletter"
+                        name="newsletter"
+                        type="checkbox"
+                        checked={formData.newsletter}
+                        onChange={handleCheckboxChange}
+                        className="h-4 w-4 text-gold focus:ring-gold border-beige-dark"
+                      />
+                      <label htmlFor="newsletter" className="ml-2 block text-sm text-charcoal/80">
+                        Concordo em receber mensagens e novidades da A10
+                      </label>
+                    </div>
+                    <p className="text-xs text-charcoal/60 ml-6 mt-1">
+                      Não iremos mandar muitas mensagens, sabemos que não é legal!
+                    </p>
                   </div>
                   
                   <button

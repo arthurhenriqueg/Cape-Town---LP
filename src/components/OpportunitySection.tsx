@@ -62,21 +62,19 @@ const OpportunitySection = () => {
           </div>
           
           <div className="mt-16 flex items-center justify-center space-x-8">
-            <div className="bg-white p-4 rounded-sm subtle-shadow">
-              {/* Espaço reservado para logo R21 - Use uma imagem real quando disponível */}
+            <div className="bg-white p-4 rounded-sm subtle-shadow w-40 h-20 flex items-center justify-center">
               <img 
                 src="https://i.ibb.co/hJ0k1YRj/290022244-552984213221934-7854402405974812143-n-removebg-preview.png" 
                 alt="R21 Logo" 
-                className="h-12"
+                className="max-h-full max-w-full object-contain"
               />
             </div>
             <span className="text-gold text-2xl">&</span>
-            <div className="bg-white p-4 rounded-sm subtle-shadow">
-              {/* Espaço reservado para logo A10 - Use uma imagem real quando disponível */}
+            <div className="bg-white p-4 rounded-sm subtle-shadow w-40 h-20 flex items-center justify-center">
               <img 
                 src="https://i.ibb.co/YFrxKTyR/babb9f11cf69dd1b8799259b.webp" 
                 alt="A10 Logo" 
-                className="h-12"
+                className="max-h-full max-w-full object-contain"
               />
             </div>
           </div>
