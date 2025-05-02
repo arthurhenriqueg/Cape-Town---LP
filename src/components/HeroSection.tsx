@@ -22,7 +22,7 @@ const HeroSection = () => {
         </h1>
         <div className="w-20 h-0.5 bg-gold mb-8 animate-slide-down opacity-0" style={{ animationDelay: '0.5s' }} />
         <p className="font-light italic text-lg md:text-xl max-w-2xl mx-auto mb-10 animate-slide-down opacity-0" style={{ animationDelay: '0.7s' }}>
-          Uma experiência única de investimento em um dos destinos mais valorizados do Brasil
+          Oportunidade única de investimento em um dos destinos mais valorizados do Brasil
         </p>
         <div className="flex flex-col sm:flex-row gap-4 animate-slide-down opacity-0" style={{ animationDelay: '0.9s' }}>
           <a href={getWhatsAppLink()} className="button-primary">
