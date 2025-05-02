@@ -41,10 +41,10 @@ const Index = () => {
       <FeaturesSection />
       <ImplementationSection />
       <LeisureSection />
+      <GallerySection />
       <LocationSection />
       <OpportunitySection />
       <ContactSection />
-      <GallerySection />
       <Footer />
       <WhatsAppButton />
     </div>
