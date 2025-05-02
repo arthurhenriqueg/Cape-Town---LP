@@ -1,3 +1,4 @@
+
 import { ArrowUp } from 'lucide-react';
 import { getWhatsAppLink } from '../utils/whatsapp';
 
@@ -63,7 +64,7 @@ const Footer = () => {
               <li>Avenida Atlântica, 5500 - Barra Norte, Balneário Camboriú - SC</li>
               <li className="pt-2 border-t border-white/10">
                 <span className="font-medium">A10 Endereço:</span><br />
-                R. 3110, N° 377 - sala 2 - Centro, Balneário Camboriú - SC, 88330-287
+                Rua 3110, 177 - Sala 2 - Centro, Balneário Camboriú - SC, 88330-287
               </li>
             </ul>
           </div>
