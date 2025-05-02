@@ -7,7 +7,7 @@ import {
   CarouselNext, 
   CarouselPrevious 
 } from "@/components/ui/carousel";
-import { Gallery } from 'lucide-react';
+import { GalleryHorizontal } from 'lucide-react';
 
 const galleryImages = [
   {
@@ -72,7 +72,7 @@ const GallerySection = () => {
           </Carousel>
           
           <div className="text-center mt-6 text-charcoal/60 flex items-center justify-center">
-            <Gallery size={16} className="mr-2" />
+            <GalleryHorizontal size={16} className="mr-2" />
             <span className="text-sm">deslize para ver mais imagens</span>
           </div>
         </div>
