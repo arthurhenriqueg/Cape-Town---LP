@@ -5,7 +5,7 @@
  * @returns URL formatada para WhatsApp
  */
 export const getWhatsAppLink = (message: string = "Gostei do Cape Town, posso saber mais?") => {
-  const phoneNumber = "5547988979988";
+  const phoneNumber = "5547992421044";
   const encodedMessage = encodeURIComponent(message);
   return `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
 };

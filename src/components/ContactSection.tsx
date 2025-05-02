@@ -73,7 +73,7 @@ const ContactSection = () => {
                 <div>
                   <h4 className="font-serif font-medium text-lg mb-1">Telefone</h4>
                   <p className="text-charcoal/70">(47) 3514-8544</p>
-                  <p className="text-charcoal/70">+55 (47) 98897-9988 (WhatsApp)</p>
+                  <p className="text-charcoal/70">+55 (47) 992421044 (WhatsApp)</p>
                 </div>
               </div>
               
@@ -83,7 +83,7 @@ const ContactSection = () => {
                 </div>
                 <div>
                   <h4 className="font-serif font-medium text-lg mb-1">E-mail</h4>
-                  <p className="text-charcoal/70">contato@capetown.com.br</p>
+                  <p className="text-charcoal/70">contato@a10.com.br</p>
                 </div>
               </div>
             </div>
