@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { 
   Carousel, 
@@ -79,7 +78,7 @@ const GallerySection = () => {
     <section id="gallery" className="py-20 bg-beige">
       <div className="container-custom">
         <div className="text-center mb-12">
-          <h2 className="heading-lg text-charcoal mb-6">Galeria</h2>
+          <h2 className="heading-lg text-charcoal mb-6">Por dentro do CapeTown</h2>
           <div className="gold-divider mx-auto" />
           <p className="text-body mb-8 max-w-3xl mx-auto">
             Confira algumas imagens do Cape Town e impressione-se com o padrão de excelência
