@@ -1,71 +1,43 @@
-
-import React, { useState } from 'react';
-import { 
-  Carousel, 
-  CarouselContent, 
-  CarouselItem, 
-  CarouselNext, 
-  CarouselPrevious 
+import React, { useState, useCallback, memo } from 'react';
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious
 } from "@/components/ui/carousel";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { GalleryHorizontal, GalleryVertical, GalleryThumbnails } from 'lucide-react';
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { Button } from "@/components/ui/button";
 
-// Interior photos of the development - Updated with new images
 const interiorImages = [
-  {
-    url: "https://i.ibb.co/0R5tnjcT/Jayme-Bernardo-Arquitetos-proposta-cape-town-1-pdf-1.jpg",
-    alt: "Cape Town Fachada Principal"
-  },
-  {
-    url: "https://i.ibb.co/SX2C9hRz/Jayme-Bernardo-Arquitetos-proposta-cape-town-1-pdf-2.jpg",
-    alt: "Cape Town Vista Noturna"
-  },
-  {
-    url: "https://i.ibb.co/ZRpRM0ST/Jayme-Bernardo-Arquitetos-proposta-cape-town-1-pdf-3.jpg",
-    alt: "Cape Town Área Comum"
-  },
-  {
-    url: "https://i.ibb.co/8LHjDPY3/Jayme-Bernardo-Arquitetos-proposta-cape-town-1-pdf-4.jpg",
-    alt: "Cape Town Interior Luxuoso"
-  },
-  {
-    url: "https://i.ibb.co/pjwbRzvQ/Jayme-Bernardo-Arquitetos-proposta-cape-town-1-pdf-5.jpg",
-    alt: "Cape Town Vista do Mar"
-  },
-  {
-    url: "https://i.ibb.co/JW4vNb3m/Jayme-Bernardo-Arquitetos-proposta-cape-town-1-pdf-6.jpg",
-    alt: "Cape Town Vista Externa"
-  },
-  {
-    url: "https://i.ibb.co/LhzK3Z5Z/Jayme-Bernardo-Arquitetos-proposta-cape-town-1-pdf-7.jpg",
-    alt: "Cape Town Perspectiva"
-  }
+  { url: "https://i.ibb.co/0R5tnjcT/Jayme-Bernardo-Arquitetos-proposta-cape-town-1-pdf-1.jpg", alt: "Cape Town Fachada Principal" },
+  { url: "https://i.ibb.co/SX2C9hRz/Jayme-Bernardo-Arquitetos-proposta-cape-town-1-pdf-2.jpg", alt: "Cape Town Vista Noturna" },
+  { url: "https://i.ibb.co/ZRpRM0ST/Jayme-Bernardo-Arquitetos-proposta-cape-town-1-pdf-3.jpg", alt: "Cape Town Área Comum" },
+  { url: "https://i.ibb.co/8LHjDPY3/Jayme-Bernardo-Arquitetos-proposta-cape-town-1-pdf-4.jpg", alt: "Cape Town Interior Luxuoso" },
+  { url: "https://i.ibb.co/pjwbRzvQ/Jayme-Bernardo-Arquitetos-proposta-cape-town-1-pdf-5.jpg", alt: "Cape Town Vista do Mar" },
+  { url: "https://i.ibb.co/JW4vNb3m/Jayme-Bernardo-Arquitetos-proposta-cape-town-1-pdf-6.jpg", alt: "Cape Town Vista Externa" },
+  { url: "https://i.ibb.co/LhzK3Z5Z/Jayme-Bernardo-Arquitetos-proposta-cape-town-1-pdf-7.jpg", alt: "Cape Town Perspectiva" }
 ];
 
-// Floor plan images - Only one floor plan as specified
 const floorPlanImages = [
-  {
-    url: "https://i.ibb.co/NdKpyDPT/Jayme-Bernardo-Arquitetos-proposta-cape-town-1-pdf.jpg",
-    alt: "Planta Cape Town - Layout Completo"
-  }
+  { url: "https://i.ibb.co/NdKpyDPT/Jayme-Bernardo-Arquitetos-proposta-cape-town-1-pdf.jpg", alt: "Planta Cape Town - Layout Completo" }
 ];
 
 const GallerySection = () => {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
   const [selectedImageAlt, setSelectedImageAlt] = useState<string | null>(null);
-  
-  // Modal controller for full-size image view
-  const openModal = (url: string, alt: string) => {
+
+  const openModal = useCallback((url: string, alt: string) => {
     setSelectedImage(url);
     setSelectedImageAlt(alt);
-  };
-  
-  const closeModal = () => {
+  }, []);
+
+  const closeModal = useCallback(() => {
     setSelectedImage(null);
     setSelectedImageAlt(null);
-  };
+  }, []);
 
   return (
     <section id="gallery" className="py-20 bg-beige">
@@ -78,7 +50,7 @@ const GallerySection = () => {
             em todos os detalhes deste empreendimento exclusivo em Balneário Camboriú.
           </p>
         </div>
-        
+
         <Tabs defaultValue="fotos" className="w-full">
           <div className="flex justify-center mb-8">
             <TabsList className="bg-charcoal/10">
@@ -92,18 +64,11 @@ const GallerySection = () => {
               </TabsTrigger>
             </TabsList>
           </div>
-          
-          {/* Interior Photos Content */}
-          <TabsContent value="fotos" className="mt-0">
+
+          <TabsContent value="fotos">
             <div className="space-y-8">
               <div className="relative mx-auto max-w-5xl px-4">
-                <Carousel
-                  opts={{
-                    align: "start",
-                    loop: true,
-                  }}
-                  className="w-full"
-                >
+                <Carousel opts={{ align: "start", loop: true }} className="w-full">
                   <CarouselContent>
                     {interiorImages.map((image, index) => (
                       <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
@@ -115,6 +80,7 @@ const GallerySection = () => {
                             <img 
                               src={image.url} 
                               alt={image.alt}
+                              loading="lazy"
                               className="w-full aspect-[4/3] object-cover transition-transform duration-300 group-hover:scale-105"
                             />
                           </div>
@@ -126,7 +92,7 @@ const GallerySection = () => {
                   <CarouselNext className="right-0 translate-x-1/2 bg-white/80 hover:bg-white" />
                 </Carousel>
               </div>
-              
+
               <ScrollArea className="h-24 rounded-md border border-gold/20 bg-white/40">
                 <div className="flex p-4 space-x-4">
                   {interiorImages.map((image, index) => (
@@ -138,6 +104,7 @@ const GallerySection = () => {
                       <img 
                         src={image.url} 
                         alt={image.alt} 
+                        loading="lazy"
                         className="h-16 w-24 object-cover rounded-sm hover:ring-2 hover:ring-gold transition-all"
                       />
                     </div>
@@ -146,18 +113,11 @@ const GallerySection = () => {
               </ScrollArea>
             </div>
           </TabsContent>
-          
-          {/* Floor Plans Content */}
-          <TabsContent value="plantas" className="mt-0">
+
+          <TabsContent value="plantas">
             <div className="space-y-8">
               <div className="relative mx-auto max-w-5xl px-4">
-                <Carousel
-                  opts={{
-                    align: "start",
-                    loop: true,
-                  }}
-                  className="w-full"
-                >
+                <Carousel opts={{ align: "start", loop: true }} className="w-full">
                   <CarouselContent>
                     {floorPlanImages.map((image, index) => (
                       <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/2">
@@ -169,6 +129,7 @@ const GallerySection = () => {
                             <img 
                               src={image.url} 
                               alt={image.alt}
+                              loading="lazy"
                               className="w-full aspect-[4/3] object-cover transition-transform duration-300 group-hover:scale-105"
                             />
                           </div>
@@ -180,7 +141,7 @@ const GallerySection = () => {
                   <CarouselNext className="right-0 translate-x-1/2 bg-white/80 hover:bg-white" />
                 </Carousel>
               </div>
-              
+
               <ScrollArea className="h-24 rounded-md border border-gold/20 bg-white/40">
                 <div className="flex p-4 space-x-4">
                   {floorPlanImages.map((image, index) => (
@@ -192,6 +153,7 @@ const GallerySection = () => {
                       <img 
                         src={image.url} 
                         alt={image.alt} 
+                        loading="lazy"
                         className="h-16 w-24 object-cover rounded-sm hover:ring-2 hover:ring-gold transition-all"
                       />
                     </div>
@@ -201,14 +163,13 @@ const GallerySection = () => {
             </div>
           </TabsContent>
         </Tabs>
-        
+
         <div className="text-center mt-6 text-charcoal/60 flex items-center justify-center">
           <GalleryVertical size={16} className="mr-2" />
           <span className="text-sm">clique nas imagens para ampliar</span>
         </div>
       </div>
-      
-      {/* Full-size image modal */}
+
       {selectedImage && (
         <div 
           className="fixed inset-0 bg-black/80 z-50 flex items-center justify-center p-4"
@@ -235,4 +196,5 @@ const GallerySection = () => {
   );
 };
 
-export default GallerySection;
+export default memo(GallerySection);
+
