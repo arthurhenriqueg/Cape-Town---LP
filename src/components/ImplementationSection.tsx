@@ -8,7 +8,7 @@ const ImplementationSection = () => {
           <div>
             <div className="relative">
               <img 
-                src="https://i.ibb.co/JWcZKbKj/Whats-App-Image-2025-04-30-at-17-52-43.jpg"
+                src="https://i.ibb.co/CsBN8NDt/fachada.webp"
                 alt="Implantação Cape Town" 
                 className="w-full h-auto object-cover rounded-sm subtle-shadow"
               />
