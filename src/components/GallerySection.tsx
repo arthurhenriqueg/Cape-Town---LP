@@ -12,17 +12,17 @@ import { ScrollArea } from "@/components/ui/scroll-area";
 import { Button } from "@/components/ui/button";
 
 const interiorImages = [
-  { url: "https://i.ibb.co/0R5tnjcT/Jayme-Bernardo-Arquitetos-proposta-cape-town-1-pdf-1.jpg", alt: "Cape Town Fachada Principal" },
-  { url: "https://i.ibb.co/SX2C9hRz/Jayme-Bernardo-Arquitetos-proposta-cape-town-1-pdf-2.jpg", alt: "Cape Town Vista Noturna" },
-  { url: "https://i.ibb.co/ZRpRM0ST/Jayme-Bernardo-Arquitetos-proposta-cape-town-1-pdf-3.jpg", alt: "Cape Town Área Comum" },
-  { url: "https://i.ibb.co/8LHjDPY3/Jayme-Bernardo-Arquitetos-proposta-cape-town-1-pdf-4.jpg", alt: "Cape Town Interior Luxuoso" },
-  { url: "https://i.ibb.co/pjwbRzvQ/Jayme-Bernardo-Arquitetos-proposta-cape-town-1-pdf-5.jpg", alt: "Cape Town Vista do Mar" },
-  { url: "https://i.ibb.co/JW4vNb3m/Jayme-Bernardo-Arquitetos-proposta-cape-town-1-pdf-6.jpg", alt: "Cape Town Vista Externa" },
-  { url: "https://i.ibb.co/LhzK3Z5Z/Jayme-Bernardo-Arquitetos-proposta-cape-town-1-pdf-7.jpg", alt: "Cape Town Perspectiva" }
+  { url: "https://i.ibb.co/NdHLfvjq/Jayme-Bernardo-Arquitetos-proposta-cape-town-1-pdf-1.webp", alt: "Cape Town Fachada Principal" },
+  { url: "https://i.ibb.co/kRnhHjY/Jayme-Bernardo-Arquitetos-proposta-cape-town-1-pdf-2.webp", alt: "Cape Town Vista Noturna" },
+  { url: "https://i.ibb.co/MDXBwJJz/Jayme-Bernardo-Arquitetos-proposta-cape-town-1-pdf-3.webp", alt: "Cape Town Área Comum" },
+  { url: "https://i.ibb.co/8gZNzQB2/Jayme-Bernardo-Arquitetos-proposta-cape-town-1-pdf-4.webp", alt: "Cape Town Interior Luxuoso" },
+  { url: "https://i.ibb.co/6cjSXxkF/Jayme-Bernardo-Arquitetos-proposta-cape-town-1-pdf-5.webp", alt: "Cape Town Vista do Mar" },
+  { url: "https://i.ibb.co/zhRgc0Wc/Jayme-Bernardo-Arquitetos-proposta-cape-town-1-pdf-6.webp", alt: "Cape Town Vista Externa" },
+  { url: "https://i.ibb.co/jk9q8fCR/Jayme-Bernardo-Arquitetos-proposta-cape-town-1-pdf-7.webp", alt: "Cape Town Perspectiva" }
 ];
 
 const floorPlanImages = [
-  { url: "https://i.ibb.co/NdKpyDPT/Jayme-Bernardo-Arquitetos-proposta-cape-town-1-pdf.jpg", alt: "Planta Cape Town - Layout Completo" }
+  { url: "https://i.ibb.co/Pz5qywP4/Jayme-Bernardo-Arquitetos-proposta-cape-town-1-pdf.webp", alt: "Planta Cape Town - Layout Completo" }
 ];
 
 const GallerySection = () => {
@@ -197,3 +197,4 @@ const GallerySection = () => {
 };
 
 export default memo(GallerySection);
+
