@@ -1,4 +1,3 @@
-
 import { ArrowUp } from 'lucide-react';
 import { getWhatsAppLink } from '../utils/whatsapp';
 
@@ -17,7 +16,7 @@ const Footer = () => {
           <div>
             <a href="#home" className="inline-block mb-6">
               <img 
-                src="https://i.ibb.co/k22L678h/logo-03-3-removebg-preview.png"
+                src="https://i.ibb.co/zWs1Bhn1/logo-03-3-removebg-preview.webp"
                 alt="Cape Town Logo"
                 className="h-16"
               />

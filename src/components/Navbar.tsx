@@ -1,3 +1,4 @@
+
 import { useState, useEffect, useCallback, memo } from 'react';
 import { Menu, X } from 'lucide-react';
 import { getWhatsAppLink } from '../utils/whatsapp';
@@ -41,7 +42,7 @@ const Navbar = () => {
       <div className="container-custom flex items-center justify-between">
         <a href="#home" className="flex items-center">
           <img 
-            src="https://i.ibb.co/k22L678h/logo-03-3-removebg-preview.png"
+            src="https://i.ibb.co/zWs1Bhn1/logo-03-3-removebg-preview.webp"
             alt="Cape Town Logo"
             className={`h-14 transition-opacity duration-300 ${
               isScrolled ? 'opacity-100' : 'opacity-90'
@@ -102,4 +103,3 @@ const Navbar = () => {
 };
 
 export default memo(Navbar);
-
