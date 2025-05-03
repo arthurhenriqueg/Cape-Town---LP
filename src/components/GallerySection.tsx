@@ -11,51 +11,43 @@ import { GalleryHorizontal, GalleryVertical, GalleryThumbnails } from 'lucide-re
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { Button } from "@/components/ui/button";
 
-// Interior photos of the development
+// Interior photos of the development - Updated with new images
 const interiorImages = [
   {
-    url: "https://i.ibb.co/ymtz5254/Whats-App-Image-2025-04-30-at-17-52-43-2.jpg",
-    alt: "Cape Town Fachada"
+    url: "https://i.ibb.co/0R5tnjcT/Jayme-Bernardo-Arquitetos-proposta-cape-town-1-pdf-1.jpg",
+    alt: "Cape Town Fachada Principal"
   },
   {
-    url: "https://i.ibb.co/JWcZKbKj/Whats-App-Image-2025-04-30-at-17-52-43.jpg",
-    alt: "Cape Town Implantação"
+    url: "https://i.ibb.co/NdKpyDPT/Jayme-Bernardo-Arquitetos-proposta-cape-town-1-pdf.jpg",
+    alt: "Cape Town Vista Panorâmica"
   },
   {
-    url: "https://i.ibb.co/B2BBbMf/Whats-App-Image-2025-04-30-at-17-52-43-1.jpg",
-    alt: "Cape Town Perspectiva"
+    url: "https://i.ibb.co/SX2C9hRz/Jayme-Bernardo-Arquitetos-proposta-cape-town-1-pdf-2.jpg",
+    alt: "Cape Town Vista Noturna"
   },
   {
-    url: "https://i.ibb.co/kHC92MZ/image.png",
-    alt: "Cape Town Interior"
+    url: "https://i.ibb.co/ZRpRM0ST/Jayme-Bernardo-Arquitetos-proposta-cape-town-1-pdf-3.jpg",
+    alt: "Cape Town Área Comum"
   },
   {
-    url: "https://i.ibb.co/NpcvV3p/photo-1487958449943-2429e8be8625.jpg",
-    alt: "Área Comum"
+    url: "https://i.ibb.co/8LHjDPY3/Jayme-Bernardo-Arquitetos-proposta-cape-town-1-pdf-4.jpg",
+    alt: "Cape Town Interior Luxuoso"
   },
   {
-    url: "https://i.ibb.co/HnbS827/photo-1518005020951-eccb494ad742.jpg",
-    alt: "Entrada Principal"
+    url: "https://i.ibb.co/pjwbRzvQ/Jayme-Bernardo-Arquitetos-proposta-cape-town-1-pdf-5.jpg",
+    alt: "Cape Town Vista do Mar"
   }
 ];
 
-// Floor plan images
+// Floor plan images - Updated with new relevant floor plan images
 const floorPlanImages = [
   {
-    url: "https://i.ibb.co/mtjpsqm/photo-1483058712412-4245e9b90334.jpg",
-    alt: "Planta Tipo A - 3 Suítes"
+    url: "https://i.ibb.co/JW4vNb3m/Jayme-Bernardo-Arquitetos-proposta-cape-town-1-pdf-6.jpg",
+    alt: "Planta Tipo A - Vista Superior"
   },
   {
-    url: "https://i.ibb.co/JBDN62X/photo-1460574283810-2aab119d8511.jpg",
-    alt: "Planta Tipo B - 4 Suítes"
-  },
-  {
-    url: "https://i.ibb.co/NVdf239/photo-1459767129954-1b1c1f9b9ace.jpg",
-    alt: "Planta Penthouse"
-  },
-  {
-    url: "https://i.ibb.co/YpDQyKf/photo-1431576901776-e539bd916ba2.jpg",
-    alt: "Área Comum - Layout"
+    url: "https://i.ibb.co/LhzK3Z5Z/Jayme-Bernardo-Arquitetos-proposta-cape-town-1-pdf-7.jpg",
+    alt: "Planta Tipo B - Layout Completo"
   }
 ];
 
