@@ -1,4 +1,3 @@
-
 import React from 'react';
 
 const AboutSection = () => {
@@ -24,7 +23,7 @@ const AboutSection = () => {
             <div className="flex items-center">
               <p className="italic text-gold mr-4">Jayme Bernardo</p>
               <img 
-                src="https://www.homedesign.com.br/media/4844/jayme-bernardo.jpg" 
+                src="https://i.ibb.co/qGRTpCB/jayme-bernardo-biografia.webp" 
                 alt="Assinatura Jayme Bernardo" 
                 className="h-16 w-auto"
               />
