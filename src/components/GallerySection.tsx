@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import { 
   Carousel, 
@@ -116,9 +117,6 @@ const GallerySection = () => {
                               alt={image.alt}
                               className="w-full aspect-[4/3] object-cover transition-transform duration-300 group-hover:scale-105"
                             />
-                            <div className="absolute inset-0 bg-gradient-to-t from-charcoal/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-start p-4">
-                              <p className="text-white font-serif">{image.alt}</p>
-                            </div>
                           </div>
                         </div>
                       </CarouselItem>
@@ -173,9 +171,6 @@ const GallerySection = () => {
                               alt={image.alt}
                               className="w-full aspect-[4/3] object-cover transition-transform duration-300 group-hover:scale-105"
                             />
-                            <div className="absolute inset-0 bg-gradient-to-t from-charcoal/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-start p-4">
-                              <p className="text-white font-serif">{image.alt}</p>
-                            </div>
                           </div>
                         </div>
                       </CarouselItem>
@@ -233,7 +228,6 @@ const GallerySection = () => {
             >
               ✕
             </Button>
-            <p className="text-white text-center mt-4 font-serif">{selectedImageAlt}</p>
           </div>
         </div>
       )}
