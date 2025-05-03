@@ -59,9 +59,9 @@ const ContactSection = () => {
                 <div>
                   <h4 className="font-serif font-medium text-lg mb-1">Endereço</h4>
                   <p className="text-charcoal/70">
-                    Avenida Atlântica, 5500 - Barra Norte
+                    R. 3110, N° 377 - sala 2 - Centro
                     <br />
-                    Balneário Camboriú - SC
+                    Balneário Camboriú - SC, 88330-287
                   </p>
                 </div>
               </div>
