@@ -6,11 +6,11 @@ const ImplementationSection = () => {
       <div className="container-custom">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div>
-            <div className="relative">
+            <div className="relative h-full">
               <img 
                 src="https://i.ibb.co/CsBN8NDt/fachada.webp"
                 alt="Implantação Cape Town" 
-                className="w-full h-auto object-cover rounded-sm subtle-shadow"
+                className="w-full h-full object-cover rounded-sm subtle-shadow"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-charcoal/60 to-transparent rounded-sm" />
               <div className="absolute bottom-6 left-6 right-6">
