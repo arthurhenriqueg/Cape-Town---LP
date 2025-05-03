@@ -8,7 +8,7 @@ const HeroSection = () => {
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{ 
-          backgroundImage: "url('https://i.ibb.co/9Hfsg93N/Whats-App-Image-2025-04-30-at-17-52-42-3.jpg')",
+          backgroundImage: "url('https://i.ibb.co/Kz9h8vS1/Whats-App-Image-2025-04-30-at-17-52-42-3.webp')",
         }}
       >
         <div className="absolute inset-0 bg-gradient-to-r from-charcoal/70 to-charcoal/40" />
@@ -43,4 +43,5 @@ const HeroSection = () => {
 };
 
 export default memo(HeroSection);
+
 
