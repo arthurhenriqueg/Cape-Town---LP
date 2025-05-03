@@ -43,7 +43,7 @@ const Navbar = () => {
       <div className="container-custom flex items-center justify-between">
         <a href="#home" className="flex items-center">
           <img 
-            src="https://i.ibb.co/MkNBnWJb/logo-03-3.png"
+            src="https://i.ibb.co/k22L678h/logo-03-3-removebg-preview.png"
             alt="Cape Town Logo"
             className={`h-14 transition-opacity duration-300 ${
               isScrolled ? 'opacity-100' : 'opacity-90'

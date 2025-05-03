@@ -17,7 +17,7 @@ const Footer = () => {
           <div>
             <a href="#home" className="inline-block mb-6">
               <img 
-                src="https://i.ibb.co/MkNBnWJb/logo-03-3.png"
+                src="https://i.ibb.co/k22L678h/logo-03-3-removebg-preview.png"
                 alt="Cape Town Logo"
                 className="h-16"
               />
