@@ -16,9 +16,11 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
           <div>
             <a href="#home" className="inline-block mb-6">
-              <span className="font-serif font-bold text-2xl tracking-tighter text-white">
-                CAPE <span className="text-white">TOWN</span>
-              </span>
+              <img 
+                src="https://i.ibb.co/MkNBnWJb/logo-03-3.png"
+                alt="Cape Town Logo"
+                className="h-16"
+              />
             </a>
             <p className="text-sm text-white/70 mb-6">
               O primeiro edifício em Balneário Camboriú projetado pelo renomado 

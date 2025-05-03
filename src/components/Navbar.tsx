@@ -42,11 +42,13 @@ const Navbar = () => {
     >
       <div className="container-custom flex items-center justify-between">
         <a href="#home" className="flex items-center">
-          <span className={`font-serif font-bold text-2xl md:text-3xl tracking-tighter ${
-            isScrolled ? 'text-charcoal' : 'text-white'
-          }`}>
-            CAPE <span className={isScrolled ? 'text-gold' : 'text-white'}>TOWN</span>
-          </span>
+          <img 
+            src="https://i.ibb.co/MkNBnWJb/logo-03-3.png"
+            alt="Cape Town Logo"
+            className={`h-14 transition-opacity duration-300 ${
+              isScrolled ? 'opacity-100' : 'opacity-90'
+            }`}
+          />
         </a>
         
         {/* Desktop Navigation */}
