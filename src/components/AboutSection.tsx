@@ -23,7 +23,7 @@ const AboutSection = () => {
             <div className="flex items-center">
               <p className="italic text-gold mr-4">Jayme Bernardo</p>
               <img 
-                src="https://i.ibb.co/qGRTpCB/jayme-bernardo-biografia.webp" 
+                src="https://www.homedesign.com.br/media/4844/jayme-bernardo.jpg" 
                 alt="Assinatura Jayme Bernardo" 
                 className="h-16 w-auto"
               />
@@ -34,7 +34,7 @@ const AboutSection = () => {
             <div className="relative">
               <div className="bg-gold/20 w-full h-full absolute -top-6 -left-6 z-0 rounded-sm" />
               <img 
-                src="https://i.ibb.co/2XRb0dW/Whats-App-Image-2025-04-30-at-17-52-39-3.jpg"
+                src="https://i.ibb.co/qGRTpCB/jayme-bernardo-biografia.webp"
                 alt="Cape Town Building" 
                 className="w-full h-auto object-cover z-10 relative rounded-sm shadow-lg"
               />
