@@ -1,4 +1,3 @@
-
 import { useState } from 'react';
 import { toast } from "sonner";
 import { getWhatsAppLink } from '../utils/whatsapp';
@@ -91,7 +90,7 @@ const ContactSection = () => {
             <div className="mt-10">
               <h4 className="font-serif font-medium text-lg mb-4">Horário de Atendimento</h4>
               <p className="text-charcoal/70 mb-2">Segunda a Sexta: 9h às 18h</p>
-              <p className="text-charcoal/70">Sábado: 9h às 13h</p>
+              <p className="text-charcoal/70">Sábado: 9h às 12h</p>
             </div>
           </div>
           

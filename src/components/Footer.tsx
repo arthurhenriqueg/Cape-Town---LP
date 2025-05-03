@@ -1,3 +1,4 @@
+
 import { ArrowUp } from 'lucide-react';
 import { getWhatsAppLink } from '../utils/whatsapp';
 
@@ -60,12 +61,12 @@ const Footer = () => {
             <h3 className="font-serif font-bold text-lg mb-6">Contato</h3>
             <ul className="space-y-3 text-white/70">
               <li>(47) 3514-8544</li>
-              <li>+55 (47) 992421044 (WhatsApp)</li>
+              <li>(47) 99242-1044 (WhatsApp)</li>
               <li>contato@a10.com.br</li>
               <li>Avenida Atlântica, 5500 - Barra Norte, Balneário Camboriú - SC</li>
               <li className="pt-2 border-t border-white/10">
                 <span className="font-medium">A10 Endereço:</span><br />
-                Rua 3110, 177 - Sala 2 - Centro, Balneário Camboriú - SC, 88330-287
+                R. 3110, N° 377 - sala 2 - Centro, Balneário Camboriú - SC, 88330-287
               </li>
             </ul>
           </div>
