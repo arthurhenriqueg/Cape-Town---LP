@@ -1,5 +1,4 @@
-
-import { useEffect } from 'react';
+import { useEffect, useCallback, memo } from 'react';
 import Navbar from "../components/Navbar";
 import HeroSection from "../components/HeroSection";
 import AboutSection from "../components/AboutSection";
@@ -16,22 +15,23 @@ import { toast } from "sonner";
 import { getWhatsAppLink } from '../utils/whatsapp';
 
 const Index = () => {
+  const handleClick = useCallback(() => {
+    window.open(getWhatsAppLink(), "_blank");
+  }, []);
+
   useEffect(() => {
     const timer = setTimeout(() => {
-      toast(
-        "Unidades Disponíveis",
-        {
-          description: "Temos unidades disponíveis para você. Deseja falar com um consultor?",
-          action: {
-            label: "Falar agora",
-            onClick: () => window.open(getWhatsAppLink(), "_blank"),
-          },
-        }
-      );
+      toast("Unidades Disponíveis", {
+        description: "Temos unidades disponíveis para você. Deseja falar com um consultor?",
+        action: {
+          label: "Falar agora",
+          onClick: handleClick,
+        },
+      });
     }, 30000);
 
     return () => clearTimeout(timer);
-  }, []);
+  }, [handleClick]);
 
   return (
     <div className="min-h-screen bg-beige">
@@ -51,4 +51,5 @@ const Index = () => {
   );
 };
 
-export default Index;
+export default memo(Index);
+
