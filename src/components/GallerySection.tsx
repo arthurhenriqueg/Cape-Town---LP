@@ -18,10 +18,6 @@ const interiorImages = [
     alt: "Cape Town Fachada Principal"
   },
   {
-    url: "https://i.ibb.co/NdKpyDPT/Jayme-Bernardo-Arquitetos-proposta-cape-town-1-pdf.jpg",
-    alt: "Cape Town Vista Panorâmica"
-  },
-  {
     url: "https://i.ibb.co/SX2C9hRz/Jayme-Bernardo-Arquitetos-proposta-cape-town-1-pdf-2.jpg",
     alt: "Cape Town Vista Noturna"
   },
@@ -36,18 +32,22 @@ const interiorImages = [
   {
     url: "https://i.ibb.co/pjwbRzvQ/Jayme-Bernardo-Arquitetos-proposta-cape-town-1-pdf-5.jpg",
     alt: "Cape Town Vista do Mar"
-  }
-];
-
-// Floor plan images - Updated with new relevant floor plan images
-const floorPlanImages = [
+  },
   {
     url: "https://i.ibb.co/JW4vNb3m/Jayme-Bernardo-Arquitetos-proposta-cape-town-1-pdf-6.jpg",
-    alt: "Planta Tipo A - Vista Superior"
+    alt: "Cape Town Vista Externa"
   },
   {
     url: "https://i.ibb.co/LhzK3Z5Z/Jayme-Bernardo-Arquitetos-proposta-cape-town-1-pdf-7.jpg",
-    alt: "Planta Tipo B - Layout Completo"
+    alt: "Cape Town Perspectiva"
+  }
+];
+
+// Floor plan images - Only one floor plan as specified
+const floorPlanImages = [
+  {
+    url: "https://i.ibb.co/NdKpyDPT/Jayme-Bernardo-Arquitetos-proposta-cape-town-1-pdf.jpg",
+    alt: "Planta Cape Town - Layout Completo"
   }
 ];
 
