@@ -1,4 +1,3 @@
-
 import { useState } from 'react';
 
 const LeisureSection = () => {
@@ -8,42 +7,42 @@ const LeisureSection = () => {
     { 
       id: 'pool', 
       name: 'Piscina térmica', 
-      image: 'https://i.ibb.co/VcWvVrF7/Whats-App-Image-2025-04-30-at-17-52-44-2.jpg' 
+      image: 'https://i.ibb.co/gZK40ggx/piscina-termica.webp' 
     },
     { 
       id: 'spa', 
       name: 'Sauna e spa', 
-      image: 'https://i.ibb.co/SwxS0DFR/Whats-App-Image-2025-04-30-at-17-52-37.jpg' 
+      image: 'https://i.ibb.co/7Jc43zC8/sauna-e-spa.webp' 
     },
     { 
       id: 'garden', 
       name: 'Jardins', 
-      image: 'https://i.ibb.co/mQcxMPm/Whats-App-Image-2025-04-30-at-17-52-44-1.jpg' 
+      image: 'https://i.ibb.co/prdz4nkF/Jardins.webp' 
     },
     { 
       id: 'party', 
       name: 'Salões de festas', 
-      image: 'https://i.ibb.co/8g5TmB6D/Whats-App-Image-2025-04-30-at-17-52-42-4.jpg' 
+      image: 'https://i.ibb.co/SgWR5wj/sal-es-de-festas.webp' 
     },
     { 
       id: 'gourmet', 
       name: 'Espaço gourmet', 
-      image: 'https://i.ibb.co/Y4p1KKvz/Whats-App-Image-2025-04-30-at-17-52-39-4.jpg' 
+      image: 'https://i.ibb.co/s9GftcZs/espa-o-gourmet.webp' 
     },
     { 
       id: 'kids', 
       name: 'Área kids', 
-      image: 'https://i.ibb.co/0pHwhjzY/Whats-App-Image-2025-04-30-at-17-52-40-2.jpg' 
+      image: 'https://i.ibb.co/Zprrsn8p/area-kids.webp' 
     },
     { 
       id: 'gym', 
       name: 'Academia moderna', 
-      image: 'https://i.ibb.co/FL8cTKrK/Whats-App-Image-2025-04-30-at-17-52-40-3.jpg' 
+      image: 'https://i.ibb.co/Pvhq3jRd/academia.webp' 
     },
     { 
       id: 'office', 
       name: 'Escritório para coworking', 
-      image: 'https://i.ibb.co/h1LvtPH0/Whats-App-Image-2025-04-30-at-17-52-41-1.jpg'
+      image: 'https://i.ibb.co/21MvLbCJ/escrit-rio-coworking.webp'
     },
   ];
 
@@ -113,8 +112,8 @@ const LeisureSection = () => {
           <div className="bg-white rounded-sm overflow-hidden subtle-shadow">
             <div className="relative h-96">
               <img 
-                src="https://i.ibb.co/jvr0hdyp/Whats-App-Image-2025-04-30-at-17-52-38.jpg" 
-                alt="Rooftop Exclusive" 
+                src="https://i.ibb.co/SDrgRCjZ/rooftop.webp" 
+                alt="Rooftop Exclusivo" 
                 className="w-full h-full object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-charcoal/70 to-transparent" />
