@@ -1,3 +1,4 @@
+
 import { useState } from 'react';
 import { toast } from "sonner";
 import { getWhatsAppLink } from '../utils/whatsapp';
@@ -72,7 +73,7 @@ const ContactSection = () => {
                 <div>
                   <h4 className="font-serif font-medium text-lg mb-1">Telefone</h4>
                   <p className="text-charcoal/70">(47) 3514-8544</p>
-                  <p className="text-charcoal/70">+55 (47) 992421044 (WhatsApp)</p>
+                  <p className="text-charcoal/70">(47) 99242-1044 (WhatsApp)</p>
                 </div>
               </div>
               
