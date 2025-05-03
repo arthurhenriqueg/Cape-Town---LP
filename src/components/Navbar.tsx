@@ -1,5 +1,4 @@
-
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useCallback, memo } from 'react';
 import { Menu, X } from 'lucide-react';
 import { getWhatsAppLink } from '../utils/whatsapp';
 
@@ -9,20 +8,19 @@ const Navbar = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 50) {
-        setIsScrolled(true);
-      } else {
-        setIsScrolled(false);
-      }
+      setIsScrolled(window.scrollY > 50);
     };
-
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
-  };
+  const toggleMenu = useCallback(() => {
+    setIsMenuOpen((prev) => !prev);
+  }, []);
+
+  const closeMenu = useCallback(() => {
+    setIsMenuOpen(false);
+  }, []);
 
   const navLinks = [
     { name: 'Início', href: '#home' },
@@ -50,8 +48,7 @@ const Navbar = () => {
             }`}
           />
         </a>
-        
-        {/* Desktop Navigation */}
+
         <div className="hidden md:flex items-center space-x-6">
           {navLinks.map((link) => (
             <a 
@@ -64,15 +61,11 @@ const Navbar = () => {
               {link.name}
             </a>
           ))}
-          <a 
-            href={getWhatsAppLink()} 
-            className="button-primary"
-          >
+          <a href={getWhatsAppLink()} className="button-primary">
             Agende uma visita
           </a>
         </div>
-        
-        {/* Mobile Menu Button */}
+
         <button 
           className={`md:hidden ${isScrolled ? 'text-charcoal' : 'text-white'} focus:outline-none`}
           onClick={toggleMenu}
@@ -80,8 +73,7 @@ const Navbar = () => {
           {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
         </button>
       </div>
-      
-      {/* Mobile Navigation */}
+
       {isMenuOpen && (
         <div className="md:hidden fixed inset-0 top-16 bg-white z-40 animate-slide-down">
           <div className="container-custom py-6 flex flex-col space-y-5">
@@ -90,7 +82,7 @@ const Navbar = () => {
                 key={link.name} 
                 href={link.href}
                 className="font-medium text-lg text-charcoal hover:text-gold transition-colors py-2 border-b border-beige-dark"
-                onClick={() => setIsMenuOpen(false)}
+                onClick={closeMenu}
               >
                 {link.name}
               </a>
@@ -98,7 +90,7 @@ const Navbar = () => {
             <a 
               href={getWhatsAppLink()} 
               className="button-primary text-center mt-4"
-              onClick={() => setIsMenuOpen(false)}
+              onClick={closeMenu}
             >
               Agende uma visita
             </a>
@@ -109,4 +101,5 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default memo(Navbar);
+
