@@ -6,7 +6,7 @@ const ImplementationSection = () => {
       <div className="container-custom">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div>
-            <div className="relative h-full">
+            <div className="relative" style={{ height: "500px" }}>
               <img 
                 src="https://i.ibb.co/CsBN8NDt/fachada.webp"
                 alt="Implantação Cape Town" 
