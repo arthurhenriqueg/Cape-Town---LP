@@ -1,9 +1,9 @@
-
 import { getWhatsAppLink } from "../utils/whatsapp";
 
 const WhatsAppButton = () => {
   return (
     <a 
+      id="whatsapp-btn"  // ← ESSENCIAL para o Facebook Pixel
       href={getWhatsAppLink()} 
       target="_blank" 
       rel="noopener noreferrer"
