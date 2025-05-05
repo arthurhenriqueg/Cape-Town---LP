@@ -8,7 +8,6 @@ import LeisureSection from "../components/LeisureSection";
 import GallerySection from "../components/GallerySection";
 import LocationSection from "../components/LocationSection";
 import OpportunitySection from "../components/OpportunitySection";
-import ContactSection from "../components/ContactSection";
 
 const Corretores = () => {
   return (
@@ -22,7 +21,6 @@ const Corretores = () => {
       <GallerySection />
       <LocationSection />
       <OpportunitySection />
-      <ContactSection />
       {/* Footer e WhatsAppButton removidos */}
     </div>
   );
