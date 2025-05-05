@@ -1,3 +1,4 @@
+
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -8,8 +9,20 @@ import React, { Suspense, lazy, useEffect } from "react";
 // Lazy load das páginas
 const Index = lazy(() => import("./pages/Index"));
 const NotFound = lazy(() => import("./pages/NotFound"));
+const PrecoDeCusto = lazy(() => import("./pages/PrecoDeCusto"));
 
 const queryClient = new QueryClient();
+
+// Type definition for Facebook Pixel
+declare global {
+  interface Window {
+    fbq?: (
+      type: string,
+      eventName: string,
+      params?: Record<string, any>
+    ) => void;
+  }
+}
 
 const App = () => {
   // 🔥 RASTREAMENTO GLOBAL DE CLIQUES EM BOTÕES WHATSAPP
@@ -17,8 +30,8 @@ const App = () => {
     const handleClick = (event: MouseEvent) => {
       const target = event.target as HTMLElement;
       const anchor = target.closest("a[href*='wa.me'], a[href*='api.whatsapp.com']");
-      if (anchor && typeof fbq !== "undefined") {
-        fbq("track", "Contact");
+      if (anchor && typeof window.fbq !== "undefined") {
+        window.fbq("track", "Contact");
       }
     };
 
@@ -35,6 +48,7 @@ const App = () => {
           <Suspense fallback={<div className="p-4 text-center text-muted">Carregando...</div>}>
             <Routes>
               <Route path="/" element={<Index />} />
+              <Route path="/preco-de-custo" element={<PrecoDeCusto />} />
               <Route path="*" element={<NotFound />} />
             </Routes>
           </Suspense>
@@ -45,5 +59,3 @@ const App = () => {
 };
 
 export default App;
-
-

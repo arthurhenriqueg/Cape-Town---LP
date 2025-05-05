@@ -1,5 +1,5 @@
-
 import { getWhatsAppLink } from "../utils/whatsapp";
+import { Link } from "react-router-dom";
 
 const OpportunitySection = () => {
   return (
@@ -15,11 +15,14 @@ const OpportunitySection = () => {
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="heading-lg text-white mb-6">Oportunidade Exclusiva</h2>
           <div className="gold-divider mx-auto" />
-          <p className="text-white/90 mb-8">
+          <p className="text-white/90 mb-2">
             Incorporado pela prestigiada parceria R21 & A10 e construído sob o regime de 
             preço de custo para moradores e investidores, o Cape Town teve todas as suas 
             unidades vendidas no lançamento.
           </p>
+          <Link to="/preco-de-custo" className="text-gold hover:text-gold/80 underline inline-block mb-8 transition-colors">
+            Saiba como funciona o regime a preço de custo
+          </Link>
           
           <div className="bg-white/10 backdrop-blur-sm p-8 rounded-sm mb-10">
             <h3 className="heading-md text-gold mb-4">Disponível para você</h3>
