@@ -1,4 +1,3 @@
-
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -10,6 +9,7 @@ import React, { Suspense, lazy, useEffect } from "react";
 const Index = lazy(() => import("./pages/Index"));
 const NotFound = lazy(() => import("./pages/NotFound"));
 const PrecoDeCusto = lazy(() => import("./pages/PrecoDeCusto"));
+const Corretores = lazy(() => import("./pages/Corretores")); // ✅ NOVA ROTA
 
 const queryClient = new QueryClient();
 
@@ -49,6 +49,7 @@ const App = () => {
             <Routes>
               <Route path="/" element={<Index />} />
               <Route path="/preco-de-custo" element={<PrecoDeCusto />} />
+              <Route path="/capetown-bc" element={<Corretores />} /> {/* ✅ NOVA ROTA */}
               <Route path="*" element={<NotFound />} />
             </Routes>
           </Suspense>
@@ -59,3 +60,4 @@ const App = () => {
 };
 
 export default App;
+
