@@ -1,3 +1,4 @@
+
 import { ArrowUp } from 'lucide-react';
 import { getWhatsAppLink } from '../utils/whatsapp';
 
@@ -85,7 +86,7 @@ const Footer = () => {
               </div>
             </div>
             <p className="mt-4 text-sm text-white/70">
-              Projeto arquitetônico: Jayme Bernardo
+              Projeto arquitetônico: Jayme Bernardo e Zermiani Schafer
             </p>
           </div>
         </div>
