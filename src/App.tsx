@@ -9,6 +9,8 @@ import React, { Suspense, lazy, useEffect } from "react";
 const Index = lazy(() => import("./pages/Index"));
 const NotFound = lazy(() => import("./pages/NotFound"));
 const PrecoDeCusto = lazy(() => import("./pages/PrecoDeCusto"));
+const Corretores = lazy(() => import("./pages/Corretores"));
+
 
 const queryClient = new QueryClient();
 
@@ -49,6 +51,7 @@ const App = () => {
               <Route path="/" element={<Index />} />
               <Route path="/preco-de-custo" element={<PrecoDeCusto />} />
               <Route path="*" element={<NotFound />} />
+              <Route path="/corretores" element={<Corretores />} />
             </Routes>
           </Suspense>
         </BrowserRouter>
