@@ -22,13 +22,6 @@ const HeroSectionClean = () => {
           Oportunidade única de investimento em um dos destinos mais valorizados do Brasil
         </p>
       </div>
-
-      <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
-        <a href="#about" className="flex flex-col items-center text-white/80 hover:text-white transition-colors">
-          <span className="text-sm mb-1">Explore</span>
-          <ChevronDown size={20} />
-        </a>
-      </div>
     </section>
   );
 };
