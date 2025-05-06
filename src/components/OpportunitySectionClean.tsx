@@ -1,3 +1,4 @@
+
 import { Link } from "react-router-dom";
 
 const OpportunitySectionClean = () => {
@@ -26,31 +27,19 @@ const OpportunitySectionClean = () => {
           <div className="bg-white/10 backdrop-blur-sm p-8 rounded-sm mb-10">
             <h3 className="heading-md text-gold mb-4">Disponível para você</h3>
             <p className="text-white/90 mb-6">
-              Agora, uma bela oportunidade: duas unidades disponíveis para revenda, 
+              Agora, uma bela oportunidade: unidades disponíveis para revenda, 
               que podem ser suas. Uma chance única de fazer parte deste empreendimento 
               exclusivo em Balneário Camboriú.
             </p>
             
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <div className="bg-white/10 p-6 rounded-sm">
-                <h4 className="font-serif text-xl text-gold mb-2">Unidade 1801</h4>
-                <ul className="space-y-2 text-white/80">
-                  <li>• 139m² de área privativa</li>
-                  <li>• 3 suítes</li>
-                  <li>• Vista para o mar</li>
-                  <li>• 2 vagas de garagem</li>
-                </ul>
-              </div>
-              
-              <div className="bg-white/10 p-6 rounded-sm">
-                <h4 className="font-serif text-xl text-gold mb-2">Unidade 1901</h4>
-                <ul className="space-y-2 text-white/80">
-                  <li>• 139m² de área privativa</li>
-                  <li>• 3 suítes</li>
-                  <li>• Vista panorâmica</li>
-                  <li>• 2 vagas de garagem</li>
-                </ul>
-              </div>
+            <div className="bg-white/10 p-6 rounded-sm">
+              <h4 className="font-serif text-xl text-gold mb-2">Detalhes da Unidade</h4>
+              <ul className="space-y-2 text-white/80">
+                <li>• 139m² de área privativa</li>
+                <li>• 3 suítes</li>
+                <li>• Vista para o mar</li>
+                <li>• 2 vagas de garagem</li>
+              </ul>
             </div>
           </div>
 
