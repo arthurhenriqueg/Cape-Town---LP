@@ -23,11 +23,8 @@ const HeroSection = () => {
           Oportunidade única de investimento em um dos destinos mais valorizados do Brasil
         </p>
         <div className="flex flex-col sm:flex-row gap-4 animate-slide-down opacity-0" style={{ animationDelay: '0.9s' }}>
-          <a href={getWhatsAppLink()} className="button-primary">
+          <a href={getWhatsAppLink()} className="button-primary bg-yellow-500 hover:bg-yellow-600">
             Saiba mais sobre as unidades disponíveis
-          </a>
-          <a href={getWhatsAppLink()} className="button-secondary">
-            Agende uma visita
           </a>
         </div>
       </div>
