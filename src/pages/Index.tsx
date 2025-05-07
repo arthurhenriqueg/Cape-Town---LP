@@ -20,6 +20,21 @@ const Index = () => {
   }, []);
 
   useEffect(() => {
+    // Google Analytics 4 script injection
+    const script1 = document.createElement('script');
+    script1.async = true;
+    script1.src = 'https://www.googletagmanager.com/gtag/js?id=G-6MDZR11FR9';
+    document.head.appendChild(script1);
+
+    const script2 = document.createElement('script');
+    script2.innerHTML = `
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-6MDZR11FR9');
+    `;
+    document.head.appendChild(script2);
+
     const timer = setTimeout(() => {
       toast("Unidades Disponíveis", {
         description: "Temos unidades disponíveis para você. Deseja falar com um consultor?",
@@ -52,4 +67,5 @@ const Index = () => {
 };
 
 export default memo(Index);
+
 
