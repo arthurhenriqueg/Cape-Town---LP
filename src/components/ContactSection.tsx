@@ -28,6 +28,12 @@ const ContactSection = () => {
 
     // Enviar dados para SheetDB
     try {
+      // Garante que o telefone tenha o prefixo 55
+      let phoneWithPrefix = formData.phone.trim();
+      if (!phoneWithPrefix.startsWith('55')) {
+        phoneWithPrefix = '55' + phoneWithPrefix.replace(/^0+/, '');
+      }
+
       const response = await fetch('https://sheetdb.io/api/v1/p42et3nbe9uio', {
         method: 'POST',
         headers: {
@@ -37,7 +43,7 @@ const ContactSection = () => {
           data: [
             {
               "Nome": formData.name,
-              "Telefone": formData.phone,
+              "Telefone": phoneWithPrefix,
               "Fonte de Dados": "Site",
               "Empreendimento": "Cape Town",
               "Data": new Date().toLocaleString('pt-BR')
