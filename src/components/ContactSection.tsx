@@ -222,20 +222,30 @@ const ContactSection = () => {
                   >
                     Enviar mensagem
                   </button>
+                  {/* Botão WhatsApp dentro do formulário */}
+                  <a
+                    href={getWhatsAppLinkWithUTM('botao-whatsapp')}
+                    className="w-full button-primary bg-green-500 hover:bg-green-600 text-center block mt-4"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Saiba mais sobre as unidades disponíveis
+                  </a>
                 </div>
               </form>
             </div>
           </div>
         </div>
+        {/* Botão WhatsApp fora do formulário (caso exista) */}
+        <a
+          href={getWhatsAppLinkWithUTM('botao-whatsapp')}
+          className="button-primary bg-green-500 hover:bg-green-600 text-center block mt-8 mx-auto max-w-xs"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Saiba mais sobre as unidades disponíveis
+        </a>
       </div>
-      <a
-        href={getWhatsAppLinkWithUTM('botao-whatsapp')}
-        className="button-primary bg-green-500 hover:bg-green-600"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Saiba mais sobre as unidades disponíveis
-      </a>
     </section>
   );
 };
