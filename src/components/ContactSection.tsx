@@ -1,4 +1,3 @@
-
 import { useState } from 'react';
 import { toast } from "sonner";
 import { getWhatsAppLink } from '../utils/whatsapp';
@@ -22,10 +21,34 @@ const ContactSection = () => {
     setFormData(prev => ({ ...prev, [name]: checked }));
   };
 
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     toast.success("Sua mensagem foi enviada com sucesso! Entraremos em contato em breve.");
     console.log('Form submitted:', formData);
+
+    // Enviar dados para SheetDB
+    try {
+      await fetch('https://sheetdb.io/api/v1/p42et3nbe9uio', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          data: [
+            {
+              "Nome": formData.name,
+              "Telefone": formData.phone,
+              "Fonte de Dados": "Site",
+              "Empreendimento": "Cape Town",
+              "Data": new Date().toLocaleString('pt-BR')
+            }
+          ]
+        }),
+      });
+    } catch (error) {
+      console.error('Erro ao enviar para o SheetDB:', error);
+    }
+
     // Reset form
     setFormData({
       name: '',
@@ -34,7 +57,7 @@ const ContactSection = () => {
       message: '',
       newsletter: false,
     });
-    
+
     // Redirecionar para WhatsApp com a mensagem
     window.open(getWhatsAppLink(), '_blank');
   };
@@ -115,7 +138,6 @@ const ContactSection = () => {
                       className="w-full p-3 border border-beige-dark rounded-sm focus:outline-none focus:ring-1 focus:ring-gold"
                     />
                   </div>
-                  
                   <div>
                     <label htmlFor="email" className="block text-sm font-medium text-charcoal/80 mb-1">
                       E-mail
