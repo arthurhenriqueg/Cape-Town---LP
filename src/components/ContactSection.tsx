@@ -5,7 +5,6 @@ import { getWhatsAppLink } from '../utils/whatsapp';
 const ContactSection = () => {
   const [formData, setFormData] = useState({
     name: '',
-    email: '',
     phone: '',
     message: '',
     newsletter: false,
@@ -35,7 +34,6 @@ const ContactSection = () => {
 
     // Enviar dados para SheetDB
     try {
-      // Garante que o telefone tenha o prefixo 55
       let phoneWithPrefix = formData.phone.trim();
       if (!phoneWithPrefix.startsWith('55')) {
         phoneWithPrefix = '55' + phoneWithPrefix.replace(/^0+/, '');
@@ -65,12 +63,11 @@ const ContactSection = () => {
     }
 
     // Redirecionar para WhatsApp com UTMs (formulário)
-    window.open(getWhatsAppLinkWithUTM('botao-formulario'), '_blank');
+    window.open(getWhatsAppLinkWithUTM('formulario-button'), '_blank');
 
     // Reset form
     setFormData({
       name: '',
-      email: '',
       phone: '',
       message: '',
       newsletter: false,
@@ -153,20 +150,6 @@ const ContactSection = () => {
                       className="w-full p-3 border border-beige-dark rounded-sm focus:outline-none focus:ring-1 focus:ring-gold"
                     />
                   </div>
-                  <div>
-                    <label htmlFor="email" className="block text-sm font-medium text-charcoal/80 mb-1">
-                      E-mail
-                    </label>
-                    <input
-                      id="email"
-                      name="email"
-                      type="email"
-                      required
-                      value={formData.email}
-                      onChange={handleChange}
-                      className="w-full p-3 border border-beige-dark rounded-sm focus:outline-none focus:ring-1 focus:ring-gold"
-                    />
-                  </div>
                   
                   <div>
                     <label htmlFor="phone" className="block text-sm font-medium text-charcoal/80 mb-1">
@@ -222,15 +205,6 @@ const ContactSection = () => {
                   >
                     Enviar mensagem
                   </button>
-                  {/* Botão WhatsApp dentro do formulário */}
-                  <a
-                    href={getWhatsAppLinkWithUTM('botao-whatsapp')}
-                    className="w-full button-primary bg-green-500 hover:bg-green-600 text-center block mt-4"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Saiba mais sobre as unidades disponíveis
-                  </a>
                 </div>
               </form>
             </div>
@@ -238,7 +212,7 @@ const ContactSection = () => {
         </div>
         {/* Botão WhatsApp fora do formulário (caso exista) */}
         <a
-          href={getWhatsAppLinkWithUTM('botao-whatsapp')}
+          href={getWhatsAppLinkWithUTM('whatsapp-button')}
           className="button-primary bg-green-500 hover:bg-green-600 text-center block mt-8 mx-auto max-w-xs"
           target="_blank"
           rel="noopener noreferrer"
