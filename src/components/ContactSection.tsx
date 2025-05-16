@@ -28,7 +28,7 @@ const ContactSection = () => {
 
     // Enviar dados para SheetDB
     try {
-      await fetch('https://sheetdb.io/api/v1/p42et3nbe9uio', {
+      const response = await fetch('https://sheetdb.io/api/v1/p42et3nbe9uio', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -45,6 +45,8 @@ const ContactSection = () => {
           ]
         }),
       });
+      const result = await response.json();
+      console.log('SheetDB response:', result);
     } catch (error) {
       console.error('Erro ao enviar para o SheetDB:', error);
     }
