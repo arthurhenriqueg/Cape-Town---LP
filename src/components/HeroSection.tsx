@@ -1,5 +1,5 @@
 import { ChevronDown } from 'lucide-react';
-import { getWhatsAppLink } from '../utils/whatsapp';
+import { getWhatsAppLinkWithUTM } from '../utils/whatsapp';
 import { memo } from 'react';
 
 const HeroSection = () => {
@@ -23,7 +23,7 @@ const HeroSection = () => {
           Oportunidade única de investimento em um dos destinos mais valorizados do Brasil
         </p>
         <div className="flex flex-col sm:flex-row gap-4 animate-slide-down opacity-0" style={{ animationDelay: '0.9s' }}>
-          <a href={getWhatsAppLink()} className="button-primary bg-green-500 hover:bg-green-600">
+          <a href={getWhatsAppLinkWithUTM('whatsapp-button')} className="button-primary bg-green-500 hover:bg-green-600">
             Saiba mais sobre as unidades disponíveis
           </a>
         </div>

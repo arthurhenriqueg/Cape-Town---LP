@@ -1,5 +1,4 @@
-
-import { getWhatsAppLink } from "../utils/whatsapp";
+import { getWhatsAppLinkWithUTM } from "../utils/whatsapp";
 import { Link } from "react-router-dom";
 
 const OpportunitySection = () => {
@@ -46,7 +45,7 @@ const OpportunitySection = () => {
           
           <div className="flex justify-center">
             <a 
-              href={getWhatsAppLink()} 
+              href={getWhatsAppLinkWithUTM('whatsapp-button')} 
               className="button-primary px-10 py-4 text-lg"
             >
               Garanta sua unidade exclusiva
