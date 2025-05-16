@@ -21,6 +21,13 @@ const ContactSection = () => {
     setFormData(prev => ({ ...prev, [name]: checked }));
   };
 
+  // Função para gerar link WhatsApp com UTMs
+  const getWhatsAppLinkWithUTM = (utmMedium: string) => {
+    const baseLink = getWhatsAppLink();
+    const utms = `utm_source=site&utm_medium=${utmMedium}&utm_campaign=capetown`;
+    return baseLink + (baseLink.includes('?') ? '&' : '?') + utms;
+  };
+
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     toast.success("Sua mensagem foi enviada com sucesso! Entraremos em contato em breve.");
@@ -57,6 +64,9 @@ const ContactSection = () => {
       console.error('Erro ao enviar para o SheetDB:', error);
     }
 
+    // Redirecionar para WhatsApp com UTMs (formulário)
+    window.open(getWhatsAppLinkWithUTM('botao-formulario'), '_blank');
+
     // Reset form
     setFormData({
       name: '',
@@ -65,9 +75,6 @@ const ContactSection = () => {
       message: '',
       newsletter: false,
     });
-
-    // Redirecionar para WhatsApp com a mensagem
-    window.open(getWhatsAppLink(), '_blank');
   };
 
   return (
@@ -221,6 +228,14 @@ const ContactSection = () => {
           </div>
         </div>
       </div>
+      <a
+        href={getWhatsAppLinkWithUTM('botao-whatsapp')}
+        className="button-primary bg-green-500 hover:bg-green-600"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Saiba mais sobre as unidades disponíveis
+      </a>
     </section>
   );
 };
