@@ -50,8 +50,8 @@ const App = () => {
             <Routes>
               <Route path="/" element={<Index />} />
               <Route path="/preco-de-custo" element={<PrecoDeCusto />} />
-              <Route path="*" element={<NotFound />} />
               <Route path="/corretores" element={<Corretores />} />
+              <Route path="*" element={<NotFound />} />
             </Routes>
           </Suspense>
         </BrowserRouter>
