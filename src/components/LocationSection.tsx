@@ -18,21 +18,17 @@ const LocationSection = () => {
           </p>
         </div>
         
-        <div className="grid grid-cols-1 lg:grid-cols-5 gap-8 items-center">
-          <div className="lg:col-span-3">
-            <div className="relative rounded-sm overflow-hidden subtle-shadow">
-              {/* Updated image */}
-              <img 
-                src="https://i.ibb.co/S4HQ6cc3/Yi-Z1-ONx-O-balneario-camboriu-640x449.webp" 
-                alt="Cape Town Location" 
-                className="w-full h-96 object-cover"
+        <div className="grid grid-cols-1 lg:grid-cols-5 gap-8 items-center">          <div className="lg:col-span-3">
+            <div className="relative rounded-sm overflow-hidden subtle-shadow">              <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d402.1217310897963!2d-48.628320155193514!3d-27.002604199999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94d8b66d9c45a969%3A0xeefaf004f49edc5b!2sR.%203198%2C%20195%20-%20Centro%2C%20Balne%C3%A1rio%20Cambori%C3%BA%20-%20SC%2C%2088330-326!5e1!3m2!1spt-BR!2sbr!4v1749141874275!5m2!1spt-BR!2sbr" 
+                width="100%" 
+                height="384" 
+                style={{ border: 0 }} 
+                allowFullScreen 
+                loading="lazy" 
+                referrerPolicy="no-referrer-when-downgrade"
+                title="Localização Cape Town"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-charcoal/60 to-transparent" />
-              <div className="absolute bottom-6 left-6">
-                <div className="bg-gold text-white px-4 py-2 rounded-sm">
-                  <p className="font-medium">Cape Town</p>
-                </div>
-              </div>
             </div>
           </div>
           

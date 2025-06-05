@@ -1,10 +1,13 @@
 import { useState, useEffect, useCallback, memo } from 'react';
 import { Menu, X } from 'lucide-react';
+import { useLocation } from 'react-router-dom';
 import { getWhatsAppLinkWithUTM } from '../utils/whatsapp';
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const location = useLocation();
+  const isCorretoresPage = location.pathname === '/corretores';
 
   useEffect(() => {
     const handleScroll = () => {
@@ -21,7 +24,6 @@ const Navbar = () => {
   const closeMenu = useCallback(() => {
     setIsMenuOpen(false);
   }, []);
-
   const navLinks = [
     { name: 'Início', href: '#home' },
     { name: 'Sobre', href: '#about' },
@@ -29,7 +31,7 @@ const Navbar = () => {
     { name: 'Implantação', href: '#implementation' },
     { name: 'Lazer', href: '#leisure' },
     { name: 'Localização', href: '#location' },
-    { name: 'Contato', href: '#contact' },
+    ...(isCorretoresPage ? [] : [{ name: 'Contato', href: '#contact' }]),
   ];
 
   return (
