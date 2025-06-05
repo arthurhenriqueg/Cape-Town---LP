@@ -45,12 +45,11 @@ const OpportunitySectionClean = () => {
 
           {/* BOTÃO REMOVIDO AQUI */}
           
-          <div className="mt-16 flex items-center justify-center space-x-8">
-            <div className="bg-white p-4 rounded-sm subtle-shadow w-40 h-20 flex items-center justify-center">
+          <div className="mt-16 flex items-center justify-center space-x-8">            <div className="bg-white p-4 rounded-sm subtle-shadow w-40 h-20 flex items-center justify-center">
               <img 
                 src="https://i.ibb.co/PvwkvNxm/290022244-552984213221934-7854402405974812143-n.jpg" 
                 alt="R21 Logo" 
-                className="max-h-full max-w-full object-contain"
+                className="h-16 w-36 object-contain"
               />
             </div>
             <span className="text-gold text-2xl">&</span>

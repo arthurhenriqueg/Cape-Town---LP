@@ -23,8 +23,7 @@ const Navbar = () => {
 
   const closeMenu = useCallback(() => {
     setIsMenuOpen(false);
-  }, []);
-  const navLinks = [
+  }, []);  const navLinks = [
     { name: 'Início', href: '#home' },
     { name: 'Sobre', href: '#about' },
     { name: 'Diferenciais', href: '#features' },
