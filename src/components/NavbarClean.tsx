@@ -28,7 +28,6 @@ const NavbarClean = () => {
     { name: 'Implantação', href: '#implementation' },
     { name: 'Lazer', href: '#leisure' },
     { name: 'Localização', href: '#location' },
-    { name: 'Contato', href: '#contact' },
   ];
 
   return (
