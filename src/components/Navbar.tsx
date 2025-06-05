@@ -7,7 +7,7 @@ const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const location = useLocation();
-  const isCorretoresPage = location.pathname === '/corretores';
+  const isCorretoresPage = location.pathname.includes('/corretores');
 
   useEffect(() => {
     const handleScroll = () => {
